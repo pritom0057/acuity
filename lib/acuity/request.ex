@@ -9,8 +9,8 @@ defmodule Acuity.Request do
   alias Acuity.Config
 
   @default_opts [
-    timeout: 120_000,
-    recv_timeout: 120_000
+    timeout: 1_800_000,
+    recv_timeout: 1_800_000
   ]
 
   @callback request(String.t(), String.t(), any(), list, list) :: {:ok, map} | {:error, any()}
